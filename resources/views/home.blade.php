@@ -40,34 +40,6 @@
                                             </div>
                                         </div>
                                     </div>                                                                
-                                    
-                                    <div class="col-md-4 col-xl-4">
-                                        <div class="card bg-c-pink order-card">
-                                            <div class="card-block">
-                                                <h5>Inventario</h5>                                               
-                                                @php
-                                                use App\Models\Productos;
-                                                $cant_productos = Productos::count();                                                
-                                                @endphp
-                                                <h2 class="text-right"><i class="fa fa-boxes f-left"></i><span>{{$cant_productos}}</span></h2>
-                                                <p class="m-b-0 text-right"><a href="/productos" class="text-white">Ver más</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4 col-xl-4">
-                                    <div class="card bg-c-blue order-card">
-                                            <div class="card-block">
-                                            <h5>Categorias</h5>                                               
-                                                @php
-                                                 use App\Models\Categorias;
-                                                $cant_categorias = Categorias::count();                                                
-                                                @endphp
-                                                <h2 class="text-right"><i class="fa-solid fa-bars f-left"></i><span>{{$cant_categorias}}</span></h2>
-                                                <p class="m-b-0 text-right"><a href="/categorias" class="text-white">Ver más</a></p>
-                                            </div>                                            
-                                        </div> 
-                                    </div>  
 
                                     </div>
                                 </div>          
