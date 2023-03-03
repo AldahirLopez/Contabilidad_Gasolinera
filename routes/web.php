@@ -32,17 +32,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('productos/listar_inventario', [App\Http\Controllers\ProductosController::class, 'listar'])->name('productos.listar_inventario');
-
 Route::group(['middleware' => ['auth']], function(){
     Route::resource('roles', RolController::class);
     Route::resource('usuarios', UsuarioController::class);
-    Route::resource('productos', ProductosController::class);
-    Route::resource('obras', ObrasController::class);
-    Route::resource('salidas', SalidasController::class);
-    Route::resource('categorias', CategoriasController::class);
-    Route::resource('entradas', EntradasController::class);
-    
 });
 
 
