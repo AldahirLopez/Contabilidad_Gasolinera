@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RolController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\CortesController;
 use App\Http\Controllers\ObrasController;
 use App\Http\Controllers\CategoriasController;
 use App\Http\Controllers\SalidasController;
@@ -35,6 +36,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['middleware' => ['auth']], function(){
     Route::resource('roles', RolController::class);
     Route::resource('usuarios', UsuarioController::class);
+    Route::resource('cortes', CortesController::class);
 });
 
 

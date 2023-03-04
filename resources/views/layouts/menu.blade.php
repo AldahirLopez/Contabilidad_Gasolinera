@@ -10,4 +10,8 @@
     <a class="nav-link {{ Request::is('roles') ? 'active' : '' }}" href="/roles">
     <i class="fas fa-bars"></i><span>Roles</span>
     </a>
+
+    <a class="nav-link {{ Request::is('cortes') ? 'active' : '' }}" href="/cortes">
+    <i class="fas fa-table"></i><span>Cortes</span>
+    </a>
 </li>
