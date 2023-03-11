@@ -27,9 +27,9 @@
                             @foreach($empleados as $empleado)
                                      <tr>
                                         <td style="display: none;">{{$empleado->Id_Empleado}}</td>
-                                        <td >{{$empleado->nombre}}</td>
-                                        <td >{{$empleado->apellido_paterno}}{{$empleado->apellido_materno}}</td>
-                                        <td >{{$empleado->turno}}</td>
+                                        <td >{{$empleado->Nombre_Emp}}</td>
+                                        <td >{{$empleado->Ap_Paterno_Emp}} {{$empleado->Ap_Materno_Emp}}</td>
+                                        <td >{{$empleado->Id_Turno}}</td>
                                         <td>
                                             @can('editar-empleados')
                                             <a class="btn btn-info" href="{{ route('empleados.edit', $empleado->Id_Empleado) }}">Editar</a>
