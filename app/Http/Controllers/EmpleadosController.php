@@ -40,9 +40,9 @@ class EmpleadosController extends Controller
     {
         $this->validate($request,[
             'nombre' => 'required',
-            'paterno' => 'required',
-            'materno' => 'required',
-            'turnos' => 'required'
+            'apellido_paterno' => 'required',
+            'apellido_materno' => 'required',
+            'turno' => 'required'
         ]);
 
         Empleado::create($request->all());
