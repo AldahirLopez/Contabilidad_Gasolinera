@@ -2,6 +2,10 @@
     <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home">
     <i class="fas fa-house"></i><span>Dashboard</span>
     </a>
+    
+    <a class="nav-link {{ Request::is('empleados') ? 'active' : '' }}" href="/empleados">
+        <i class="fas fa-boxes"></i><span>Empleados</span>
+    </a>
 
     <a class="nav-link {{ Request::is('usuarios') ? 'active' : '' }}" href="/usuarios">
         <i class="fas fa-boxes"></i><span>Usuarios</span>
