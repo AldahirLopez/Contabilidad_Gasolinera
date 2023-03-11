@@ -24,6 +24,19 @@
                                 <th style="color: #fff;">Acciones</th>
                             </thead>
                             <tbody>
+                            @foreach($empleados as $empleado)
+                                     <tr>
+                                        <td style="display: none;">{{$empleado->Id_Empleado}}</td>
+                                        <td >{{$empleado->Nombre_Emp}}</td>
+                                        <td >{{$empleado->Ap_Paterno_Emp}}</td>
+                                        <td >{{$empleado->Ap_Materno_Emp}}</td>
+                                        <td>
+                                            @can('editar-empleados')
+                                            <a class="btn btn-info" href="{{ route('empleados.edit', $empleado->Id_Empleado) }}">Editar</a>
+                                            @endcan
+                                        </td>
+                                     </tr>         
+                                @endforeach
                             </tbody>
                             </table>
                             <div class="pagination justify-content-end">

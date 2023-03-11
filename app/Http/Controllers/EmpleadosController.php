@@ -38,7 +38,15 @@ class EmpleadosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'nombre' => 'required',
+            'paterno' => 'required',
+            'materno' => 'required',
+            'turnos' => 'required'
+        ]);
+
+        Empleado::create($request->all());
+        return redirect()->route('empleados.index');
     }
 
     /**
