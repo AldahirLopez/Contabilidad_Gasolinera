@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
+<!-- Agrega los archivos CSS de DataTables -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
+
+<!-- Agrega los archivos JavaScript de jQuery y DataTables -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
+
 @section('content')
 <section class="section">
     <div class="section-header">
@@ -63,13 +70,6 @@
                                         
                                     </select>
                                     <a class="btn btn-warning" href="#">Nuevo Empleado</a>
-                                </div>
-                            </div>
-
-
-                            <div class="col-xs-12 col-sm-12 col-md-12">
-                                <div class="form-group">
-                                    <label form="name">Roles</label>
                                 </div>
                             </div>
 
