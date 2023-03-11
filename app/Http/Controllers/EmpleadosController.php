@@ -39,10 +39,10 @@ class EmpleadosController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'nombre' => 'required',
-            'apellido_paterno' => 'required',
-            'apellido_materno' => 'required',
-            'turno' => 'required'
+            'Nombre_Emp' => 'required',
+            'Ap_Paterno_Emp' => 'required',
+            'Ap_Materno_Emp' => 'required',
+            'Id_Turno' => 'required'
         ]);
 
         Empleado::create($request->all());

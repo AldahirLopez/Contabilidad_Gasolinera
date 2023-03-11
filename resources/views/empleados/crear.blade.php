@@ -29,29 +29,29 @@
                            <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
-                                   <label for="nombre">Nombre</label>
-                                   <input type="text" name="nombre" class="form-control">
+                                   <label for="Nombre_Emp">Nombre</label>
+                                   <input type="text" name="Nombre_Emp" class="form-control">
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
-                                   <label for="apellido_paterno">Apellido Paterno</label>
-                                   <input type="text" name="apellido_paterno" class="form-control">
+                                   <label for="Ap_Paterno_Emp">Apellido Paterno</label>
+                                   <input type="text" name="Ap_Paterno_Emp" class="form-control">
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
-                                   <label for="apellido_materno">Apellido Materno</label>
-                                   <input type="text" name="apellido_materno" class="form-control">
+                                   <label for="Ap_Materno_Emp">Apellido Materno</label>
+                                   <input type="text" name="Ap_Materno_Emp" class="form-control">
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
-                                        <label form="turno">Turno</label>
-                                        <select class="form-control" name="turno">
+                                        <label form="Id_Turno">Turno</label>
+                                        <select class="form-control" name="Id_Turno">
                                             @foreach($turnos as $turno)
                                             <option value="{{$turno->Id_Turno}}">{{$turno->hora_inicio}}-{{$turno->hora_fin}}</option>
                                             @endforeach
